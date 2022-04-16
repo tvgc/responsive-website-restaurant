@@ -72,7 +72,7 @@ body {
 }
 
 h1, h2, h3, p, ul {
-    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
@@ -315,7 +315,85 @@ img {
 }
 
 /*========== MENU ==========*/
+.menu__container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+}
+
+.menu__content {
+    position: relative; /*aqui está com position relative para o elemento filho (botão de carrinho) poder ficar em qualquer lugar dentro do elemento pai de forma absoluta, pois o elemento filho terá a propriedade position:absolute. Se o elemento pai não tivesse relative e sim static (que é padrão) o elemento filho vazaria para fora do container pai*/
+    display: flex;
+    flex-direction: column;
+    background-color: var(--container-color);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(3, 74, 40, 0.15);
+    padding: 0.75rem;
+}
+
+.menu__img {
+    width: 100px;
+    align-self: center; /*antes, eu usaria esta imagem dentro de uma outra div para poder usar display flex e centralizar com justify-items:center. Contudo, como o elemento pai desta classe tem display flex, só usar align-self:center no filho já alinha e resolve o problema*/
+    margin-bottom: var(--mb-2);
+}
+
+.menu__name, .menu__preci {
+    font-weight: var(--font-semii-bold);
+    color: var(--title-color);
+}
+
+.menu__name {
+    font-size: var(--normal-font-size);/*apesar de estar num elemento h3, a fonte está no tamanho normal*/
+}
+
+.menu__detail, .menu__preci {
+    font-size: var(--small-font-size);
+}
+
+.menu__detail {
+    margin-bottom: var(--mb-1);
+}
+
+.menu__button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;/*no teste que eu fiz não houve mudança colocando ou não esta propriedade flex*/
+    border-radius: 0.5rem 0 0.5rem;
+    padding: 0.625rem 0.813rem;
+}
 
 /*========== APP ==========*/
+.app__data {
+    text-align: center;
+}
 
+.app__description {
+    margin-bottom: var(--mb-5);
+}
+
+.app__stores {
+    margin-bottom: var(--mb-4);
+}
+
+.app__stores a {
+    display: inline-block;/*inlusão feita por minha conta para que o elemento envolvesse completamente a imagem, pois não estava ocorrendo*/
+}
+
+.app__store {
+    width: 120px;
+    margin: 0 var(--mb-1);
+}
+
+.app__img {
+    width: 230px;
+    justify-self: center;
+}
 /*========== CONTACT ==========*/
+.contact__container {
+    text-align: center;
+}
+
+
+.contact__description {
+    margin-bottom: var(--mb-3);
+}

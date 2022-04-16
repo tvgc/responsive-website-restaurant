@@ -55,6 +55,7 @@
             </div>
         </section>
 
+        <!--Existem duas forma principais de organizar as tagas nas sessões abaixo tendo em vista a utilização do grid. O ABOUT é um exemplo onde todo o conteúdo está dentro de um container em uma div-container em comum, cuja função principal é dividir a  tela em conteúdo e imagem acim que a screen for maior que 759px. Enquanto não ultrapassa, o conteúdo é organizado em coluna, normalmente. O SERVICES é um outro exemplo onde todo o conteúdo fica em coluna em qualquer tamanho de screen. Por isso só tem a section-container como container pai e todo o conteúdo está um sobre o outro. -->
         <!--========== ABOUT ==========-->
         <section class="about section bd-container" id="about">
             <div class="about__container bd-grid">
@@ -356,17 +357,65 @@
 
         <!--========== MENU ==========-->
         <section class="menu section bd-container" id="menu">
+            <span class="section-subtitle">Special</span>
+            <h2 class="section-title">Menu of the week</h2>
 
+            <div class="menu__container bd-grid">
+                <div class="menu__content">
+                    <img src="assets/img/plate1.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Barbecue salad</h3>
+                    <span class="menu__detail">Delicious dish</span>
+                    <span class="menu__preci">$22.00</span>
+                    <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                </div>
+                <div class="menu__content">
+                    <img src="assets/img/plate2.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Salad with fish</h3>
+                    <span class="menu__detail">Delicious dish</span>
+                    <span class="menu__preci">$12.00</span>
+                    <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                </div>
+                <div class="menu__content">
+                    <img src="assets/img/plate3.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Spinach salad</h3>
+                    <span class="menu__detail">Delicious dish</span>
+                    <span class="menu__preci">$9.50</span>
+                    <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                </div>
+            </div>
         </section>
 
         <!--========== APP ==========-->
         <section class="app section bd-container">
+            <div class="app__container bd-grid">
+                <div class="app__data">
+                    <span class="section-subtitle">App</span>
+                    <h2 class="section-title">App is avaible</h2>
+                    <p class="app__description">Find our applicaion and download it, you can make reservations, food orders, see your deliberies on the way and much more.</p>
 
+                    <div class="app__stores">
+                        <a href="#"><img src="assets/img/app1.png" alt="" class="app__store"></a>
+                        <a href="#"><img src="assets/img/app2.png" alt="" class="app__store"></a>
+                    </div>
+                </div>    
+
+                <img src="assets/img/movil-app.png" alt="" class="app__img">
+            </div>
         </section>
 
         <!--========== CONTACT US ==========-->
         <section class="contact section bd-container" id="contact">
+            <div class="contact__container bd-grid">
+                <div class="contact__data">
+                    <span class="section-subtitle">Let's talk</span>
+                    <h2 class="section-title">Contact us</h2>
+                    <p class="contact__description">If you want to reserve a table in our restaurant, contact us and we will attend you quickly, with our 24/7 chat service</p>                 
+                </div>    
 
+                <div class="contact__button">
+                    <a href="#" class="button">Contact us</a>
+                </div>
+            </div>
         </section>
 
 
@@ -374,7 +423,50 @@
 
     <!--========== FOOTER ==========-->
     <footer class="footer section bd-container">
+        <div class="footer__container br-grid">
+            <div class="footer__content">
+                <a href="" class="footer__logo">Tasty Food</a>
+                <span class="footer__description">Restaurant</span>
 
+                <div>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Services</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">Delivey</a></li>
+                    <li><a href="#" class="footer__link">Pricing</a></li>
+                    <li><a href="#" class="footer__link">Fast food</a></li>
+                    <li><a href="#" class="footer__link">Reserve your spot</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Information</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">Event</a></li>
+                    <li><a href="#" class="footer__link">Contact us</a></li>
+                    <li><a href="#" class="footer__link">Privacy policy</a></li>
+                    <li><a href="#" class="footer__link">Terms of services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Adress</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">Lima - Peru</a></li>
+                    <li><a href="#" class="footer__link">Jr Union</a></li>
+                    <li><a href="#" class="footer__link">#999</a></li>
+                    <li><a href="#" class="footer__link">tastyfood@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="footer__copy">&#169; 2020 Bedimcode. All right reserved.</p>
     </footer>
 
     <!--========== SCROLL REVEAL ==========-->
